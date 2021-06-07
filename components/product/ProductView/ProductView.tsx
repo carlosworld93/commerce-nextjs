@@ -79,11 +79,11 @@ const ProductView: FC<Props> = ({ product }) => {
         <div className={cn(s.productDisplay, 'fit')}>
           <div className={s.nameBox}>
             <h1 className={s.name}>{product.name}</h1>
-            <div className={s.price}>
+            {/* <div className={s.price}>
               {price}
               {` `}
               {product.price?.currencyCode}
-            </div>
+            </div> */}
           </div>
 
           <div className={s.sliderContainer}>
@@ -126,7 +126,8 @@ const ProductView: FC<Props> = ({ product }) => {
                           setChoices((choices) => {
                             return {
                               ...choices,
-                              [opt.displayName.toLowerCase()]: v.label.toLowerCase(),
+                              [opt.displayName.toLowerCase()]:
+                                v.label.toLowerCase(),
                             }
                           })
                         }}
@@ -142,7 +143,7 @@ const ProductView: FC<Props> = ({ product }) => {
             </div>
           </section>
           <div>
-            <Button
+            {/* <Button
               aria-label="Add to Cart"
               type="button"
               className={s.button}
@@ -153,16 +154,16 @@ const ProductView: FC<Props> = ({ product }) => {
               {variant?.availableForSale === false
                 ? 'Not Available'
                 : 'Add To Cart'}
-            </Button>
+            </Button> */}
           </div>
         </div>
-        {process.env.COMMERCE_WISHLIST_ENABLED && (
+        {/* {process.env.COMMERCE_WISHLIST_ENABLED && (
           <WishlistButton
             className={s.wishlistButton}
             productId={product.id}
             variant={product.variants[0]! as any}
           />
-        )}
+        )} */}
       </div>
     </Container>
   )

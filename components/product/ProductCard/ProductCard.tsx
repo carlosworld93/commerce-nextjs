@@ -51,19 +51,19 @@ const ProductCard: FC<Props> = ({
               <h3 className={s.productTitle}>
                 <span>{product.name}</span>
               </h3>
-              <span className={s.productPrice}>
+              {/* <span className={s.productPrice}>
                 {product.price.value}
                 &nbsp;
                 {product.price.currencyCode}
-              </span>
+              </span> */}
             </div>
-            {process.env.COMMERCE_WISHLIST_ENABLED && (
+            {/* {process.env.COMMERCE_WISHLIST_ENABLED && (
               <WishlistButton
                 className={s.wishlistButton}
                 productId={product.id}
                 variant={product.variants[0] as any}
               />
-            )}
+            )} */}
           </div>
           <div className={s.imageContainer}>
             {product?.images && (
