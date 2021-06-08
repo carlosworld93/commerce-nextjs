@@ -85,7 +85,7 @@ const Footer: FC<Props> = ({ className, pages }) => {
           <div>
             <span>&copy; 2020 ACME, Inc. All rights reserved.</span>
           </div>
-          <div className="flex items-center text-primary">
+          {/* <div className="flex items-center text-primary">
             <span className="text-primary">Crafted by</span>
             <a
               rel="noopener"
@@ -99,7 +99,7 @@ const Footer: FC<Props> = ({ className, pages }) => {
                 alt="Vercel.com Logo"
               />
             </a>
-          </div>
+          </div> */}
         </div>
       </Container>
     </footer>
